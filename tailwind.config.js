@@ -7,11 +7,10 @@ export default {
   theme: {
     extend: {
       colors: {
-        themewhite: "#ffffff",
+        themeyellow: "#f5e60d",
         themepurple: "#502ec3"
       },
     },
   },
   plugins: [],
 };
-
