@@ -23,12 +23,12 @@ const Types = () => {
         <button className="bg-black text-white px-6 py-2 rounded-full hover:bg-pink-500 transition-colors duration-300">SHOP NOW</button>
       </div>
       <div data-aos='zoom-in' data-aos-delay='100' className='flex flex-col justify-center items-end gap-6 bg-cover bg-center p-10 rounded-lg'  style={{ backgroundImage: `url(${banner2})`}}>
-        <h1 className='text-black border rounded-lg border-black px-6 py-2 text-lg'>60% Offset</h1>
+        <h1 className='text-black border rounded-lg border-black px-6 py-2 text-lg'>70% Offset</h1>
         <h1 className='text-xl font-semibold  text-center text-white'>Wireless Devices</h1>
         <button className="bg-black text-white px-6 py-2 rounded-full hover:bg-purple-600 transition-colors duration-300">SHOP NOW</button>
       </div>
       <div data-aos='zoom-in' data-aos-delay='100' className='flex flex-col justify-center items-end gap-6 bg-cover bg-center p-10 rounded-lg'  style={{ backgroundImage: `url(${banner3})`}}>
-        <h1 className='text-black border rounded-lg border-black px-6 py-2 text-lg'>60% Offset</h1>
+        <h1 className='text-black border rounded-lg border-black px-6 py-2 text-lg'>90% Offset</h1>
         <h1 className='text-xl font-semibold  text-center text-white'>Wireless Devices</h1>
         <button className="bg-black text-white px-6 py-2 rounded-full hover:bg-orange-700 transition-colors duration-300">SHOP NOW</button>
       </div>
