@@ -23,7 +23,7 @@ const Category = () => {
     
     <div data-aos="zoom-in" data-aos-delay="50" className='lg:w-[15%] w-full flex flex-col justify-center lg:items-start items-center gap-[20px]'>
    <h1 className='text-purple-600 text-xl font-semibold text-center mx-[25px]'>Favourite Item</h1>
-   <h1 className='lg:text-start text-center text-black font-semibold text-[25px] leading-[10px] '>Popular Category</h1>
+   <h1 className='lg:text-start text-center text-black font-semibold text-[19px] leading-[20px] ml-[12px]'>Popular Category</h1>
    <button className='bg-black hover:bg-purple-400 hover:text-white transition duration-300 ease-in-out  text-white px-8 py-3 rounded-lg font-semibold mt-[60px]'>VIEW ALL ITEMS</button>
     </div>
     <div className='lg:w-[85%] w-full grid lg:grid-cols-5 grid-colos-1 justify-center items-start gap-10'>
