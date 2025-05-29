@@ -12,7 +12,7 @@ import Footer from './sections/Footer'
 
 function App() {
   return (
-    <div  >
+    <div className='overflow-x-hidden' >
      <Header/>
      <Hero/>
      <Category/>
