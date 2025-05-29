@@ -1,4 +1,4 @@
-import React, {useEffect} from 'react'
+import React, {useEffect, useState} from 'react'
 import { FaStar,FaRegHeart,FaRegStar } from 'react-icons/fa6'
 import { MdAddShoppingCart,MdOutlineRemoveRedEye  } from 'react-icons/md'
 import AOS from 'aos';
@@ -15,6 +15,8 @@ const ProductsGrid = () => {
       });
       AOS.refresh();
     }, []);
+
+    const [rating, setRating] = useState(0);
 
   return (
     <div id='products' className='w-full lg:px-20 px-5 py-[80px] bg-gray-100 flex flex-col justify-center items-center gap-4'>
@@ -43,13 +45,17 @@ const ProductsGrid = () => {
             <hr/>
             <div className='flex justify-between items-center gap-2 mt-3'>
                 <div className='flex justify-start items-center'>
-                  <FaStar className='text-purple-700'/>
-                  <FaRegStar />
-                  <FaStar className='text-purple-700'/>
-                  <FaStar className='text-purple-700'/>
-                  <FaStar className='text-purple-700'/>
+                  {[1,2,3,4,5].map((value) =>(
+                    <span key={value} onClick={() => setRating(prev => (prev === value ? value - 1 : value))} className='cursor-pointer'>
+                      {value <= rating ?(
+                        <FaStar className='text-purple-700'/>
+                      ) : (
+                        <FaRegStar className='text-purple-700'/>
+                      )}
+                    </span>
+                  ))}
                 </div>
-                <button className='bg-green-500 px-4 py-2 text-white rounded-full text-[13px] font-semibold'>SALE 25%</button>
+                <button className='bg-green-500 px-4 py-2 text-white rounded-full text-[13px] font-semibold hover:bg-transparent hover:text-black hover:cursor-pointer'>SALE 25%</button>
             </div>
 
           </div>
